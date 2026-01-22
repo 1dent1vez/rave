@@ -29,13 +29,12 @@ export default function DJCard() {
         {/* Info del DJ */}
         <div className="flex-1 text-center sm:text-left">
           <div className="text-neon-magenta font-bold text-2xl sm:text-xl mb-1 neon-glow">
-            ARCC PROJECT
-          </div>
+            ARK         </div>
           <div className="text-steel-400 text-sm font-mono mb-2">
             DJ // PRODUCER
           </div>
           <div className="text-steel-500 text-xs sm:text-sm">
-            Set en vivo · Música electrónica
+            Set en vivo · No vamos a volver
           </div>
         </div>
       </div>

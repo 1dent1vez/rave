@@ -10,12 +10,12 @@ import { eventConfig } from '@/config/event';
 export default function Hero() {
   return (
     <section className="relative z-10 min-h-[60vh] flex items-center justify-center px-4 py-16">
-      <div className="w-full max-w-4xl">
-        {/* Header técnico */}
-        <div className="mb-8 flex items-center justify-between text-xs coord-label">
-          <span>EVENT_ID: #{Math.floor(Math.random() * 9999).toString().padStart(4, '0')}</span>
-          <span className="hidden sm:inline">PROTOCOL: RAVE.v2</span>
-          <span>{eventConfig.FECHA}</span>
+      <div className="w-full max-w-4xl mx-auto px-4">
+        {/* Metadatos técnicos superiores */}
+        <div className="flex justify-between text-xs font-mono text-steel-600 mb-8 animate-fade-in">
+          <div>EVENT_ID: SCI-FI</div>
+          <div>PROTOCOL: PARANORMAL</div>
+          <div className="hidden sm:block">{eventConfig.FECHA}</div>
         </div>
         
         {/* Título principal */}
@@ -27,11 +27,14 @@ export default function Hero() {
             </span>
           </div>
           
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4 tracking-tight text-gradient glitch-trigger">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 text-gradient animate-glitch-trigger">
             {eventConfig.EVENTO_TITULO}
           </h1>
           
           <p className="text-lg md:text-xl text-steel-400 font-light">
+            Una noche de fantasmas y datos
+          </p>
+          <p className="text-base md:text-lg text-steel-500 font-light mt-1">
             Celebración de {eventConfig.FESTEJADO_NOMBRE}
             {eventConfig.FESTEJADO_EDAD && ` // ${eventConfig.FESTEJADO_EDAD} años`}
           </p>

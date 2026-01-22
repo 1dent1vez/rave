@@ -31,16 +31,16 @@ export default function TechGrid() {
       
       {/* Coordenadas decorativas */}
       <div className="absolute top-4 left-4 coord-label">
-        LAT: 19.4326° N
+        LAT: 19.MOJABI
       </div>
       <div className="absolute top-4 right-4 coord-label">
-        LONG: 99.1332° W
+        LONG: 99.GHOST
       </div>
       <div className="absolute bottom-4 left-4 coord-label">
-        SYS: ONLINE
+        SYS: DATA.ONLINE
       </div>
       <div className="absolute bottom-4 right-4 coord-label">
-        v2.0.26
+        v2023.DATA
       </div>
     </div>
   );

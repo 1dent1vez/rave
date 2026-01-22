@@ -31,7 +31,7 @@ export default function Home() {
         {/* Footer */}
         <footer className="relative z-10 py-8 px-4 text-center">
           <div className="coord-label">
-            POWERED BY SYSTEM.v2 // {new Date().getFullYear()}
+            HECHO POR GHAELIKERR
           </div>
         </footer>
       </div>

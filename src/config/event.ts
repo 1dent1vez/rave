@@ -15,7 +15,7 @@ export const eventConfig = {
   UBICACION_TITULO: "Mi cuarto",
   UBICACION_DETALLE: "Coordenadas disponibles al confirmar",
   DRESS_CODE: "Neon / Tech Wear / Dark Mode",
-  NOTAS: "Trae tu mejor energía",
+  NOTAS: "Lo siento BB, pero esta noche es para bailar",
   TTP_TTD: "TTP / TTD", // Trae Tu Pomo / Trae Tu Droga
   
   // Configuración de WhatsApp
