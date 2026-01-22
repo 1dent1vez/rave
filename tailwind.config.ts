@@ -28,7 +28,9 @@ const config: Config = {
         },
       },
       fontFamily: {
-        sans: ['var(--font-inter)', 'system-ui', 'sans-serif'],
+        sans: ['var(--font-space)', 'system-ui', 'sans-serif'],
+        display: ['var(--font-space)', 'system-ui', 'sans-serif'],
+        mono: ['var(--font-mono)', 'ui-monospace', 'SFMono-Regular', 'monospace'],
       },
       animation: {
         'glitch': 'glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both',
@@ -50,8 +52,8 @@ const config: Config = {
           '100%': { transform: 'translateY(100%)' },
         },
         'pulse-glow': {
-          '0%, 100%': { opacity: '1', boxShadow: '0 0 20px rgba(0, 240, 255, 0.5)' },
-          '50%': { opacity: '0.8', boxShadow: '0 0 30px rgba(0, 240, 255, 0.8)' },
+          '0%, 100%': { opacity: '1', boxShadow: '0 0 18px rgba(255, 0, 255, 0.45)' },
+          '50%': { opacity: '0.8', boxShadow: '0 0 30px rgba(255, 0, 255, 0.65)' },
         },
         'fade-in': {
           '0%': { opacity: '0' },

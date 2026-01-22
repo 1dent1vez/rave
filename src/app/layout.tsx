@@ -1,26 +1,32 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { JetBrains_Mono, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import { eventConfig } from "@/config/event";
 
-const inter = Inter({ 
+const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
-  variable: '--font-inter',
-  display: 'swap',
+  variable: "--font-space",
+  display: "swap",
+});
+
+const jetBrainsMono = JetBrains_Mono({
+  subsets: ["latin"],
+  variable: "--font-mono",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
   title: `${eventConfig.EVENTO_TITULO} | ${eventConfig.FESTEJADO_NOMBRE}`,
-  description: `Invitación digital para ${eventConfig.EVENTO_TITULO}. ${eventConfig.FECHA} a las ${eventConfig.HORA} en ${eventConfig.UBICACION_TITULO}.`,
-  keywords: ['invitación', 'rave', 'fiesta', 'evento', 'cumpleaños'],
+  description: `Invitacion digital para ${eventConfig.EVENTO_TITULO}. ${eventConfig.FECHA_TEXTO} a las ${eventConfig.HORA_TEXTO} en ${eventConfig.UBICACION_TITULO}.`,
+  keywords: ["invitacion", "rave", "fiesta", "evento", "cumpleanos"],
   authors: [{ name: eventConfig.FESTEJADO_NOMBRE }],
   openGraph: {
     title: eventConfig.EVENTO_TITULO,
-    description: `Celebración de ${eventConfig.FESTEJADO_NOMBRE} - ${eventConfig.FECHA}`,
-    type: 'website',
+    description: `Celebracion de ${eventConfig.FESTEJADO_NOMBRE} - ${eventConfig.FECHA_TEXTO}`,
+    type: "website",
   },
-  viewport: 'width=device-width, initial-scale=1',
-  themeColor: '#0a0a0a',
+  viewport: "width=device-width, initial-scale=1",
+  themeColor: "#0a0a0a",
 };
 
 export default function RootLayout({
@@ -30,7 +36,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es-MX">
-      <body className={inter.variable}>
+      <body className={`${spaceGrotesk.variable} ${jetBrainsMono.variable}`}>
         {children}
       </body>
     </html>
