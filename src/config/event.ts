@@ -11,20 +11,29 @@ export const eventConfig = {
   START_ISO: "2026-01-23T19:00:00-06:00",
 
   UBICACION_TITULO: "Mi cuarto",
-  UBICACION_DETALLE: "Acceso por mensaje",
+  UBICACION_DETALLE: "Metepec, acceso por mensaje",
 
   REGLAS: [
-    "Llega puntual",
-    "Respeta el espacio",
-    "Sin flashes directos",
-    "Mantente hidratado",
+    "Quiero que llegues puntual",
+    "Te pido respeto al espacio",
+    "Yo cuido la luz, sin flashes directos",
+    "Quiero que te hidrates",
   ],
 
+  TTP_TTD: "TTP / TTD",
+
   WHATSAPP_NUMERO: "527294509882",
-  WHATSAPP_TEMPLATE: "Confirmo asistencia: {status}",
+  WHATSAPP_TEMPLATE: "Confirmo mi asistencia: {status}",
 
   MAPS_EMBED_URL:
-"https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d941.7287535554547!2d-99.55792273048588!3d19.24253526505507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTnCsDE0JzMzLjEiTiA5OcKwMzMnMjYuMiJX!5e0!3m2!1ses!2smx!4v1769064050973!5m2!1ses!2smx",
+    "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d941.7287535554547!2d-99.55792273048588!3d19.24253526505507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTnCsDE0JzMzLjEiTiA5OcKwMzMnMjYuMiJX!5e0!3m2!1ses!2smx!4v1769064050973!5m2!1ses!2smx",
+
+  AUDIO: {
+    SRC: "/audio/rave-loop.wav",
+    LABEL: "Audio rave",
+    NOTE: "Loop original sin derechos, vibe industrial rave",
+  },
+
   PALETA: {
     FONDO: "rgb(10, 10, 10)",
     TEXTO: "rgb(170, 170, 170)",

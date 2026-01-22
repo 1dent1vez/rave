@@ -38,7 +38,7 @@ export default function TechGrid() {
         LON: 99.1332
       </div>
       <div className="absolute bottom-4 left-4 coord-label">
-        SYS: INVITACION.ONLINE
+        SYS: MI.INVITACION
       </div>
       <div className="absolute bottom-4 right-4 coord-label">
         v1.0

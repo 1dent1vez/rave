@@ -42,7 +42,7 @@ export default function UbicacionPage() {
               />
             </div>
             <p className="text-xs text-steel-500 mt-3">
-              Si el mapa no se muestra, usa la referencia: {eventConfig.UBICACION_DETALLE || eventConfig.UBICACION_TITULO}.
+              {eventConfig.UBICACION_DETALLE || eventConfig.UBICACION_TITULO}
             </p>
           </div>
         </div>

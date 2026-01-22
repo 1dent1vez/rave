@@ -8,9 +8,8 @@ export default function Hero() {
     <section className="relative z-10 min-h-[60vh] flex items-center justify-center px-4 pt-16 pb-10">
       <div className="w-full max-w-4xl mx-auto px-4">
         <div className="flex justify-between text-xs font-mono text-steel-600 mb-8 animate-fade-in">
-          <div>INVITACION_ID: RAVE-01</div>
-          <div>CANAL: WHATSAPP</div>
-          <div className="hidden sm:block">{eventConfig.FECHA_TEXTO}</div>
+          <div>INVITACION</div>
+          <div>{eventConfig.FECHA_TEXTO}</div>
         </div>
 
         <div className="glass-panel data-scan p-8 md:p-12 mb-6 animate-fade-in">
@@ -26,12 +25,26 @@ export default function Hero() {
           </h1>
 
           <p className="text-lg md:text-xl text-steel-400 font-light">
-            Invitacion digital para celebrar a {eventConfig.FESTEJADO_NOMBRE}
-          </p>
-          <p className="text-base md:text-lg text-steel-500 font-light mt-1">
-            Rave privado. Acceso por confirmacion.
+            Te invito a celebrar conmigo.
           </p>
         </div>
+
+        {eventConfig.TTP_TTD && (
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4 animate-slide-up" style={{ animationDelay: '0.15s' }}>
+            <div className="glass-panel p-4 sm:p-6 tech-border flex items-center gap-4">
+              <div className="relative h-12 w-12 rounded-sm border border-neon-magenta/60 bg-carbon-900/60">
+                <div className="absolute inset-2 border border-neon-magenta/50" />
+                <div className="absolute left-1/2 top-1/2 h-2 w-2 -translate-x-1/2 -translate-y-1/2 bg-neon-magenta/70" />
+              </div>
+              <div>
+                <div className="coord-label mb-1">TTP / TTD</div>
+                <div className="text-steel-200 font-medium text-base sm:text-lg">
+                  {eventConfig.TTP_TTD}
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 animate-slide-up" style={{ animationDelay: '0.2s' }}>
           <div className="glass-panel p-4 sm:p-6 tech-border">
@@ -57,10 +70,7 @@ export default function Hero() {
           <div className="glass-panel p-4 sm:p-6 tech-border sm:col-span-2 lg:col-span-1">
             <div className="coord-label mb-2">ACCESO</div>
             <div className="text-steel-200 font-medium text-base sm:text-lg">
-              Confirmacion previa
-            </div>
-            <div className="text-steel-500 text-sm mt-1">
-              Invitados limitados
+              Acceso por confirmacion
             </div>
           </div>
         </div>
@@ -68,7 +78,7 @@ export default function Hero() {
         {eventConfig.REGLAS.length > 0 && (
           <div className="mt-6 animate-slide-up" style={{ animationDelay: '0.3s' }}>
             <div className="glass-panel p-4 sm:p-6 border border-neon-magenta/20">
-              <div className="coord-label mb-3">REGLAS RAPIDAS</div>
+              <div className="coord-label mb-3">REGLAS</div>
               <ul className="grid gap-2 text-sm text-steel-400">
                 {eventConfig.REGLAS.map((regla) => (
                   <li key={regla} className="flex items-start gap-2">

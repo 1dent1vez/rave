@@ -36,9 +36,6 @@ export default function RSVPModule() {
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold font-display text-steel-200">
             Confirma tu asistencia
           </h2>
-          <p className="text-sm sm:text-base text-steel-500 mt-2">
-            Selecciona tu estado y abre WhatsApp con un toque.
-          </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_0.9fr] gap-6">
@@ -75,26 +72,13 @@ export default function RSVPModule() {
               </div>
             </div>
 
-            <div className="glass-panel p-4 sm:p-6">
-              <div className="coord-label mb-2">ESTADO ACTUAL</div>
-              <div className="flex items-center gap-3">
-                <span className="status-chip">
-                  <span className="w-2 h-2 rounded-full bg-neon-magenta" />
-                  {estado}
-                </span>
-                <span className="text-xs text-steel-500">Guardado localmente</span>
-              </div>
-            </div>
           </div>
 
           <div className="glass-panel data-scan p-5 sm:p-6 h-fit">
-            <div className="coord-label mb-2">CONFIRMAR POR WHATSAPP</div>
+            <div className="coord-label mb-2">WHATSAPP</div>
             <h3 className="text-lg sm:text-xl font-bold font-display text-steel-200 mb-2">
-              Listo para confirmar
+              Confirmacion directa
             </h3>
-            <p className="text-sm text-steel-500 mb-4">
-              Abrimos WhatsApp con un mensaje prellenado para tu asistencia.
-            </p>
             <button
               type="button"
               onClick={handleConfirmar}
