@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { JetBrains_Mono, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import { eventConfig } from "@/config/event";
@@ -25,7 +25,11 @@ export const metadata: Metadata = {
     description: `Celebracion de ${eventConfig.FESTEJADO_NOMBRE} - ${eventConfig.FECHA_TEXTO}`,
     type: "website",
   },
-  viewport: "width=device-width, initial-scale=1",
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
   themeColor: "#0a0a0a",
 };
 
