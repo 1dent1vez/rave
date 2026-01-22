@@ -76,7 +76,7 @@ export default function Countdown() {
           </div>
 
           <div className="text-xs text-steel-500 mt-4">
-            {state.isLive ? 'La fiesta ya inicio.' : `Inicio: ${eventConfig.FECHA_TEXTO} / ${eventConfig.HORA_TEXTO}`}
+            {state.isLive ? 'En curso.' : `${eventConfig.FECHA_TEXTO} / ${eventConfig.HORA_TEXTO}`}
           </div>
         </div>
       </div>

@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { JetBrains_Mono, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import { eventConfig } from "@/config/event";
@@ -17,15 +17,19 @@ const jetBrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: `${eventConfig.EVENTO_TITULO} | ${eventConfig.FESTEJADO_NOMBRE}`,
-  description: `Invitacion digital para ${eventConfig.EVENTO_TITULO}. ${eventConfig.FECHA_TEXTO} a las ${eventConfig.HORA_TEXTO} en ${eventConfig.UBICACION_TITULO}.`,
+  description: `Te invito a ${eventConfig.EVENTO_TITULO}. ${eventConfig.FECHA_TEXTO} a las ${eventConfig.HORA_TEXTO} en ${eventConfig.UBICACION_TITULO}.`,
   keywords: ["invitacion", "rave", "fiesta", "evento", "cumpleanos"],
   authors: [{ name: eventConfig.FESTEJADO_NOMBRE }],
   openGraph: {
     title: eventConfig.EVENTO_TITULO,
-    description: `Celebracion de ${eventConfig.FESTEJADO_NOMBRE} - ${eventConfig.FECHA_TEXTO}`,
+    description: `Te invito a celebrar conmigo - ${eventConfig.FECHA_TEXTO}`,
     type: "website",
   },
-  viewport: "width=device-width, initial-scale=1",
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
   themeColor: "#0a0a0a",
 };
 

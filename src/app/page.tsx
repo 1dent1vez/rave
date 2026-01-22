@@ -1,6 +1,8 @@
 import Link from 'next/link';
+import AudioModule from '@/components/AudioModule';
 import Countdown from '@/components/Countdown';
 import Hero from '@/components/Hero';
+import OpeningSequence from '@/components/OpeningSequence';
 import RSVPModule from '@/components/RSVPModule';
 import TechGrid from '@/components/TechGrid';
 
@@ -15,37 +17,37 @@ export default function Home() {
       <div className="fixed inset-0 bg-[radial-gradient(120%_120%_at_50%_0%,transparent_35%,rgba(10,10,10,0.85)_100%)] -z-10" />
 
       <div className="relative z-10">
-        <Hero />
-        <Countdown />
-        <RSVPModule />
+        <AudioModule />
+        <OpeningSequence>
+          <Hero />
+          <Countdown />
+          <RSVPModule />
 
-        <section className="relative z-10 px-4 pb-16">
-          <div className="w-full max-w-5xl mx-auto">
-            <div className="glass-panel p-5 sm:p-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-              <div>
+          <section className="relative z-10 px-4 pb-16">
+            <div className="w-full max-w-5xl mx-auto">
+              <div className="glass-panel p-5 sm:p-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                <div>
                 <div className="coord-label mb-2">UBICACION</div>
                 <div className="text-steel-200 font-medium text-lg">
-                  Ver mapa embebido con la ubicacion exacta.
-                </div>
-                <div className="text-steel-500 text-sm mt-1">
-                  Ruta dedicada para llegar sin friccion.
+                  Mapa embebido con la ubicacion.
                 </div>
               </div>
               <Link
                 href="/ubicacion"
                 className="btn-primary text-base sm:text-lg px-6 py-3"
               >
-                Ver ubicacion
+                Ver mi ubicacion
               </Link>
+              </div>
             </div>
-          </div>
-        </section>
+          </section>
 
         <footer className="relative z-10 py-8 px-4 text-center">
           <div className="coord-label">
-            SYS.OPERATOR // GHAELIKERR
+            Hecho x GHAELIKERR
           </div>
         </footer>
+        </OpeningSequence>
       </div>
     </main>
   );
